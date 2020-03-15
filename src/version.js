@@ -12,6 +12,8 @@ function callExecSync(command, params) {
 }
 
 export const getVersion = function(req, res) {
+  console.log('get /version')
+
   const node = callExecSync('node', ['--version'])
   const npm = callExecSync('npm', ['--version'])
   const pwd = callExecSync('pwd')

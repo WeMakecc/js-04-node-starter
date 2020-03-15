@@ -1,6 +1,7 @@
 import got from 'got'
 
 export const getWeather = function(req, res) {
+  console.log('/weather')
   const city = req.params.city || 'London'
 
   const apiKey = process.env.WEATHER_API
@@ -8,9 +9,10 @@ export const getWeather = function(req, res) {
     throw new Error('WEATHER API MISSING!!')
   }
 
-  got(
-    `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`,
-  )
+  const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+
+  console.log(`Asking for: \n ${url} \n\n`)
+  got(url)
     .then(response => {
       const responseObject = JSON.parse(response.body)
       console.log(responseObject)
