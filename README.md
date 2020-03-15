@@ -18,8 +18,10 @@ npm install
 
 ### Usage
 
+Copy the file `.env.example` into `.env` and write a valid api key from [https://home.openweathermap.org/](https://home.openweathermap.org/)
+
 ```
 npm start
 ```
 
-A local version will now be running on [localhost:3000](http://localhost:3000)
+A local version of the server will now be running on [localhost:3000](http://localhost:3000)
