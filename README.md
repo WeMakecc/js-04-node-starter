@@ -10,7 +10,7 @@ Get a local server with node.js ✨
 
 Be sure to have node-js installed.
 
-Download the repository at [https://github.com/wemake/starter-parcel](https://github.com/wemake/starter-parcel), unzip and open a terminal in the project directory.
+Download the repository at [https://github.com/WeMakecc/js-04-node-starter](https://github.com/WeMakecc/js-04-node-starter), unzip and open a terminal in the project directory.
 
 ```
 npm install
